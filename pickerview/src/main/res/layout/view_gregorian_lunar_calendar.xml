@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <com.felix.pickerview.view.NumberPickerView
+        android:id="@+id/picker_year"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:contentDescription="year_picker"
+        app:npv_DividerColor="#EBECF0"
+        app:npv_DividerHeight="1dp"
+        app:npv_ShowCount="5"
+        app:npv_TextColorNormal="#33121C33"
+        app:npv_TextColorSelected="#FF121C33"
+        app:npv_TextSizeNormal="14dp"
+        app:npv_TextSizeSelected="14dp"
+        app:npv_textColorLevel2="#80121C33" />
+
+    <com.felix.pickerview.view.NumberPickerView
+        android:id="@+id/picker_month"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1"
+        android:contentDescription="month_picker"
+        app:npv_DividerColor="#EBECF0"
+        app:npv_DividerHeight="1dp"
+        app:npv_ShowCount="5"
+        app:npv_TextColorNormal="#33121C33"
+        app:npv_TextColorSelected="#FF121C33"
+        app:npv_TextSizeNormal="14dp"
+        app:npv_TextSizeSelected="14dp"
+        app:npv_textColorLevel2="#80121C33" />
+
+    <com.felix.pickerview.view.NumberPickerView
+        android:id="@+id/picker_day"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:contentDescription="day_picker"
+        app:npv_DividerColor="#EBECF0"
+        app:npv_DividerHeight="1dp"
+        app:npv_ShowCount="5"
+        app:npv_TextColorNormal="#33121C33"
+        app:npv_TextColorSelected="#FF121C33"
+        app:npv_TextSizeNormal="14dp"
+        app:npv_TextSizeSelected="14dp"
+        app:npv_textColorLevel2="#80121C33" />
+
+</LinearLayout>
