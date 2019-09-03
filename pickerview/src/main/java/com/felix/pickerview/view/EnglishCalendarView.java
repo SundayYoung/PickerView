@@ -76,7 +76,7 @@ public class EnglishCalendarView extends LinearLayout implements NumberPickerVie
     }
 
     private void initInternal(Context context) {
-        View contentView = inflate(context, R.layout.view_gregorian_lunar_calendar, this);
+        View contentView = inflate(context, R.layout.view_english_calendar, this);
 
         this.mYearPickerView = ((NumberPickerView) contentView.findViewById(R.id.picker_year));
         this.mMonthPickerView = ((NumberPickerView) contentView.findViewById(R.id.picker_month));
