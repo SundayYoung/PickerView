@@ -1,22 +1,22 @@
 package com.felix.pickerview.bean;
 
 public class AreaBean {
-    private String areaCode;
-    private String areaName;
+    private String code;
+    private String name;
 
-    public String getAreaCode() {
-        return this.areaCode;
+    public String getCode() {
+        return this.code;
     }
 
-    public void setAreaCode(String areaCode) {
-        this.areaCode = areaCode;
+    public void setCode(String code) {
+        this.code = code;
     }
 
-    public String getAreaName() {
-        return this.areaName;
+    public String getName() {
+        return this.name;
     }
 
-    public void setAreaName(String areaName) {
-        this.areaName = areaName;
+    public void setName(String name) {
+        this.name = name;
     }
 }

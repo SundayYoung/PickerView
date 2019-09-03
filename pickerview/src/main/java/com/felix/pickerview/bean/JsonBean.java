@@ -3,24 +3,24 @@ package com.felix.pickerview.bean;
 import java.util.List;
 
 public class JsonBean {
-    private String provinceCode;
-    private String provinceName;
+    private String code;
+    private String name;
     private List<CityBean> city;
 
-    public String getProvinceCode() {
-        return this.provinceCode;
+    public String getCode() {
+        return this.code;
     }
 
-    public void setProvinceCode(String provinceCode) {
-        this.provinceCode = provinceCode;
+    public void setCode(String code) {
+        this.code = code;
     }
 
-    public String getProvinceName() {
-        return this.provinceName;
+    public String getName() {
+        return this.name;
     }
 
-    public void setProvinceName(String provinceName) {
-        this.provinceName = provinceName;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public List<CityBean> getCity() {

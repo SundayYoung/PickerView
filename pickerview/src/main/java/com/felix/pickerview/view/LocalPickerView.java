@@ -115,7 +115,7 @@ public class LocalPickerView extends LinearLayout implements NumberPickerView.On
             this.mLocalView.setValue(lIndex);
         } else {
             ArrayList<String> strings = new ArrayList();
-            strings.add(this.jsonBean.get(pIndex).getCity().get(cIndex).getCityName());
+            strings.add(this.jsonBean.get(pIndex).getCity().get(cIndex).getName());
             this.mLocalView.setDisplayedValusArray(strings);
             this.mLocalView.setMaxValue(strings.size() - 1);
             this.mLocalView.setValue(0);
@@ -129,7 +129,7 @@ public class LocalPickerView extends LinearLayout implements NumberPickerView.On
 
         while (var3.hasNext()) {
             JsonBean jbean = (JsonBean) var3.next();
-            mProviceList.add(jbean.getProvinceName());
+            mProviceList.add(jbean.getName());
         }
 
         return mProviceList;
@@ -141,7 +141,7 @@ public class LocalPickerView extends LinearLayout implements NumberPickerView.On
 
         while (var3.hasNext()) {
             CityBean cityBean = (CityBean) var3.next();
-            result.add(cityBean.getCityName());
+            result.add(cityBean.getName());
         }
 
         return result;
@@ -153,7 +153,7 @@ public class LocalPickerView extends LinearLayout implements NumberPickerView.On
 
         while (var3.hasNext()) {
             AreaBean areaBean = (AreaBean) var3.next();
-            result.add(areaBean.getAreaName());
+            result.add(areaBean.getName());
         }
 
         return result;
@@ -163,16 +163,16 @@ public class LocalPickerView extends LinearLayout implements NumberPickerView.On
         JsonBean mRjpBean = this.jsonBean.get(pIndex);
         CityBean mRjcbean = this.jsonBean.get(pIndex).getCity().get(cIndex);
         List<AreaBean> alist = this.jsonBean.get(pIndex).getCity().get(cIndex).getArea();
-        String mProName = mRjpBean.getProvinceName();
-        String mProCode = mRjpBean.getProvinceCode();
-        String mCityName = mRjcbean.getCityName();
-        String mCityCode = mRjcbean.getCityCode();
+        String mProName = mRjpBean.getName();
+        String mProCode = mRjpBean.getCode();
+        String mCityName = mRjcbean.getName();
+        String mCityCode = mRjcbean.getCode();
         String mLocalname;
         String mLocalCode;
         if (alist != null && alist.size() > 0) {
             AreaBean mRarbean = this.jsonBean.get(pIndex).getCity().get(cIndex).getArea().get(lIndex);
-            mLocalname = mRarbean.getAreaName();
-            mLocalCode = mRarbean.getAreaCode();
+            mLocalname = mRarbean.getName();
+            mLocalCode = mRarbean.getCode();
         } else {
             mLocalname = mCityName;
             mLocalCode = mCityCode;

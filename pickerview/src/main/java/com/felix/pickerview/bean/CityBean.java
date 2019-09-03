@@ -3,24 +3,24 @@ package com.felix.pickerview.bean;
 import java.util.List;
 
 public class CityBean {
-    private String cityCode;
-    private String cityName;
+    private String code;
+    private String name;
     private List<AreaBean> area;
 
-    public String getCityCode() {
-        return this.cityCode;
+    public String getCode() {
+        return this.code;
     }
 
-    public void setCityCode(String cityCode) {
-        this.cityCode = cityCode;
+    public void setCode(String code) {
+        this.code = code;
     }
 
-    public String getCityName() {
-        return this.cityName;
+    public String getName() {
+        return this.name;
     }
 
-    public void setCityName(String cityName) {
-        this.cityName = cityName;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public List<AreaBean> getArea() {
