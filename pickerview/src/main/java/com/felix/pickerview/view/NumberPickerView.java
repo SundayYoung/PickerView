@@ -1141,9 +1141,9 @@ public class NumberPickerView extends View {
             this.mPaintText.setTextSize(textSize);
             if (0 <= index && index < this.getOneRecycleSize()) {
                 CharSequence str = this.mDisplayedValues[index + this.mMinShowIndex];
-                if (((CharSequence)str).length() > 8) {
-                    str = ((CharSequence)str).subSequence(0, 8);
-                }
+//                if (((CharSequence)str).length() > 8) {
+//                    str = ((CharSequence)str).subSequence(0, 8);
+//                }
 
                 if (this.mTextEllipsize != null) {
                     str = TextUtils.ellipsize((CharSequence)str, this.mPaintText, (float)(this.getWidth() - 2 * this.mItemPaddingHorizontal), this.getEllipsizeType());
